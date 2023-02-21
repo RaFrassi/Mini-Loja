@@ -1,7 +1,12 @@
 # Mini-Loja
 
-Site em HTML e CSS simulando uma loja online
+Site em HTML,CSS e JS simulando uma loja online para venda de bicicletas. Modelo de site baseado em video aula do canal Danki Code.
+Website in HTML, CSS and JS simulating an online store for selling bicycles. Website template based on video lesson from the Danki Code channel.
 
-Versao 1.0 / Version 1.0
+Versão 1.0 / Version 1.0
 
 -Implementação dos arquivos Index.html, Index.css e reset.css / Implementation Index.html, Index.css and reset.css files.
+
+Versão 1.01 / Version 1.01
+
+-Implementaçao do arquivo Index.js e seu refente codigo. / Implementation of the Index.js file and its corresponding code.

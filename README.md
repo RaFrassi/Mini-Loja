@@ -9,6 +9,6 @@ Versão 1.0 / Version 1.0
 
 Versão 1.01 / Version 1.01
 
-https://github.com/RaFrassi/Mini-Loja/issues/1#issue-1593887255
+![Code JS](https://user-images.githubusercontent.com/120213605/220422524-eb2fffbb-797a-48da-82fe-85a1b9a857c8.png)
 
 -Implementaçao do arquivo Index.js e seu refente codigo. / Implementation of the Index.js file and its corresponding code.

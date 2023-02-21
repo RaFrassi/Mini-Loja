@@ -2,8 +2,8 @@
 
 __Linguagem utilizada / Language Used__
 
+![html_5_icon-icons com_55763](https://user-images.githubusercontent.com/120213605/220462726-c4e781a2-d403-4199-8414-bb47fe89fdb9.png)![css_plain_wordmark_logo_icon_146574](https://user-images.githubusercontent.com/120213605/220462723-dff5f3a5-a742-48e6-b9ee-248d1e3b47cc.png)![javascript_icon_130900](https://user-images.githubusercontent.com/120213605/220462729-39d76565-3f57-40e2-8fea-fd336f883a21.png)
 
-![social_html5_html_71](https://user-images.githubusercontent.com/120213605/220456302-6c568953-d5f6-47a8-b102-ab97e59aa62c.png) ![css-file-outline_icon-icons com_57592](https://user-images.githubusercontent.com/120213605/220456298-6ebbf83f-82ca-4247-8d69-7eeb05abf0cc.png) ![javascript_brand_icon_211798](https://user-images.githubusercontent.com/120213605/220456301-bacea174-0399-4b4a-acaa-a02b0c85d6c2.png)
 
 Site simulando uma loja online para venda de bicicletas. Modelo de site baseado em video aula do canal Danki Code.
 

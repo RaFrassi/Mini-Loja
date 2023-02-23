@@ -22,4 +22,5 @@ Website simulating an online store for selling bicycles. Website template based 
 * __Versão 1.01.1 / Version 1.01.1__
 
 -Finalização do codigo em javascript com a funcionalidade de carrinho de compras / Finalization of the code in javascript with the shopping cart functionality.
+
 -Alteraçoes no CSS para melhor funcionalidade e teste do codigo / CSS changes for better functionality and code testing.

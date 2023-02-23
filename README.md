@@ -17,4 +17,9 @@ Website simulating an online store for selling bicycles. Website template based 
 
 ![Code JS](https://user-images.githubusercontent.com/120213605/220422524-eb2fffbb-797a-48da-82fe-85a1b9a857c8.png)
 
--Implementaçao dos primeiros códigos em javascript / Implementation of the first codes in javascript
+-Implementaçao dos primeiros códigos em javascript / Implementation of the first codes in javascript.
+
+* __Versão 1.01.1 / Version 1.01.1__
+
+-Finalização do codigo em javascript com a funcionalidade de carrinho de compras / Finalization of the code in javascript with the shopping cart functionality.
+-Alteraçoes no CSS para melhor funcionalidade e teste do codigo / CSS changes for better functionality and code testing.

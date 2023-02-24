@@ -3,31 +3,73 @@
 
 <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/styles/index.css">
-        <link rel="stylesheet" href="./assets/styles/reset.css">
-
-        <title>Inicio</title>
+        <title>Pizzaria Delícia</title>
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
         <header>
-
+                <h1>Pizzaria Delícia</h1>
         </header>
-        <main>
-                <div id="produtos">
 
+        <div class="menu">
+                <div class="pizza-item">
+                        <img src="pizza1.jpg" alt="Pizza de Calabresa">
+                        <h3>Pizza de Calabresa</h3>
+                        <p>Deliciosa pizza de calabresa com muçarela e tomate. </p>
+                        <p>Preço: R$ 29,90</p>
+                        <button onclick="adicionarAoCarrinho('Pizza de Calabresa', 29.9)">Adicionar ao Carrinho</button>
                 </div>
-                <div id="carrinho">
 
+                <div class="pizza-item">
+                        <img src="pizza2.jpg" alt="Pizza de Frango com Catupiry">
+                        <h3>Pizza de Frango com Catupiry</h3>
+                        <p>Irresistível pizza de frango com catupiry e azeitonas. </p>
+                        <p>Preço: R$ 32,90</p>
+                        <button onclick="adicionarAoCarrinho('Pizza de Frango com Catupiry', 32.9)">Adicionar ao
+                                Carrinho</button>
                 </div>
-        </main>
-        <footer>
 
-        </footer>
+                <div class="pizza-item">
+                        <img src="pizza3.jpg" alt="Pizza de Quatro Queijos">
+                        <h3>Pizza de Quatro Queijos</h3>
+                        <p>Saborosa pizza de quatro queijos com muçarela, parmesão, gorgonzola e catupiry. </p>
+                        <p>Preço: R$ 34,90</p>
+                        <button onclick="adicionarAoCarrinho('Pizza de Quatro Queijos', 34.9)">Adicionar ao
+                                Carrinho</button>
+                </div>
 
-        <script type="text/javascript" src="./assets/js/index.js"></script>
+                <div class="pizza-item">
+                        <img src="pizza4.jpg" alt="Pizza de Pepperoni">
+                        <h3>Pizza de Pepperoni</h3>
+                        <p>Deliciosa pizza de pepperoni com muçarela e molho de tomate. </p>
+                        <p>Preço: R$ 27,90</p>
+                        <button onclick="adicionarAoCarrinho('Pizza de Pepperoni', 27.9)">Adicionar ao Carrinho</button>
+                </div>
+        </div>
+
+        <div class="carrinho">
+                <h2>Carrinho de Compras</h2>
+                <table>
+                        <thead>
+                                <tr>
+                                        <th>Item</th>
+                                        <th>Preço</th>
+                                        <th>Quantidade</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <!-- iterações com cada item no carrinho -->
+
+                        </tbody>
+                </table>
+                <div class="total">Total: R$ 95,00</div>
+                <button>Finalizar Compra</button>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>

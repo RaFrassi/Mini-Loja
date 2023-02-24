@@ -1,20 +1,91 @@
-#produtos {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 2%;
+/* Define a fonte padrão para todo o site */
+body {
+        font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho com cor de fundo e texto em negrito */
+header {
+        background-color: #d9534f;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 24px;
+}
+
+/* Define as configurações de layout e espaçamento do menu */
+.menu {
         display: flex;
-        text-align: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px 0;
 }
 
+/* Define as configurações de layout e estilo dos itens do menu */
+.bike-item {
+        width: 45%;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        background-color: white;
+}
+
+.bike-item h3 {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: bold;
+}
+
+.bike-item img {
+        width: 50%;
+        border-radius: 5px;
+}
+
+.bike-item p {
+        margin: 10px 0;
+        font-size: 16px;
+}
+
+.bike-item button {
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #d9534f;
+        color: white;
+        cursor: pointer;
+}
+
+.bike-item button:hover {
+        background-color: #c9302c;
+}
+
+/* Define as configurações de layout e estilo do carrinho */
 #carrinho {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 2%;
-        text-align: center;
-
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
 }
 
-.produto-single {
-        width: 33.3;
-        padding: 0 20px;
+#carrinho p {
+        margin: 0;
+        font-size: 16px;
+}
+
+#carrinho .item {
+        margin: 10px 0;
+        font-size: 16px;
+}
+
+#carrinho .item span {
+        font-weight: bold;
+}
+
+#carrinho .total {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
 }

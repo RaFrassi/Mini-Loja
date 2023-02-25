@@ -24,3 +24,9 @@ Website simulating an online store for selling bicycles. Website template based 
 -Finalização do codigo em javascript com a funcionalidade de carrinho de compras / Finalization of the code in javascript with the shopping cart functionality.
 
 -Alteraçoes no CSS para melhor funcionalidade e teste do codigo / CSS changes for better functionality and code testing.
+
+* __Versão 1.2 / Version 1.2__
+
+-Refeito todo o site seguindo modelos de conteudo gratuitos no youtube referente a sites com sistema de carrinho de compras, com implementaçao dos seus respectivos arquivos CSS e JavaScript, com armazenamento dos produtos em variavel global e funçoes de adição de produtos, remoção e atualização de produtos no carrinho, adicionado link para direcionamento ao botão finalizar venda.
+
+-Rebuilt the entire site following free content templates on YouTube referring to sites with a shopping cart system, with the implementation of their respective CSS and JavaScript files, with storage of products in a global variable and functions for adding products, removing and updating products in the cart, added a link to the checkout button.

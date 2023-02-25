@@ -39,7 +39,7 @@ header {
 }
 
 .bike-item img {
-        width: 50%;
+        width: auto;
         border-radius: 5px;
 }
 
@@ -63,29 +63,70 @@ header {
 }
 
 /* Define as configurações de layout e estilo do carrinho */
-#carrinho {
+.carrinho {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 80%;
+}
+
+.carrinho h2 {
+        font-size: 20px;
+        margin: 0 0 10px;
+}
+
+.carrinho table {
+        border-collapse: collapse;
+        width: 100%;
+}
+
+.carrinho th,
+.carrinho td {
         border: 1px solid #ccc;
         padding: 10px;
-        border-radius: 5px;
-        margin-bottom: 20px;
+        text-align: center;
 }
 
-#carrinho p {
-        margin: 0;
-        font-size: 16px;
-}
-
-#carrinho .item {
-        margin: 10px 0;
-        font-size: 16px;
-}
-
-#carrinho .item span {
+.carrinho th {
+        background-color: #f2f2f2;
         font-weight: bold;
 }
 
-#carrinho .total {
-        margin-top: 10px;
+.carrinho td:first-child {
+        text-align: left;
+}
+
+.carrinho .quantidade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.carrinho .quantidade button {
+        background-color: #f2f2f2;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0 5px;
+        padding: 5px 10px;
+}
+
+.carrinho .quantidade button:hover {
+        background-color: #ddd;
+}
+
+.carrinho .quantidade span {
+        margin: 0 5px;
+}
+
+.carrinho .total {
         font-size: 20px;
         font-weight: bold;
+        margin-top: 10px;
+        text-align: right;
 }

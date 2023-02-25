@@ -1,67 +1,70 @@
-const items = [
-        {
-                id: 0,
-                nome: "Scott Aspect 940",
-                descricao: "A SCOTT Aspect 940 é uma bicicleta rígida de montanha que foi desenvolvida para ser leve, eficiente e acessível. mariaEquipada com um sistema de bloqueio para a suspensão, travões de disco e componentes Syncros, esta bicicleta é perfeita para iniciantes ou ciclistas com um orçamento consciente.",
-                img: "./assets/img/ASPECT940.jpg",
-                quantidade: 0,
-        },
-        {
-                id: 1,
-                nome: "bike2",
-                descricao: "Bicicleta aro 26 Scott",
-                img: "./assets/img/bike 1.jpg",
-                quantidade: 0,
-        },
-        {
-                id: 2,
-                nome: "bike3",
-                descricao: "Bicicleta aro 26 Scott",
-                img: "./assets/img/bike 2.jpg",
-                quantidade: 0,
-        },
+// Define uma variável global para armazenar os itens no carrinho
+let carrinho = [];
 
-];
-
-inicializarLoja = () => {
-        var containerProdutos = document.getElementById("produtos");
-        items.map((val) => {
-                containerProdutos.innerHTML +=
-                        `
-                <div class="produto-single">
-                        <img src="`+ val.img + `"/>
-                        <p>`+ val.nome + `</p>
-                        <p>`+ val.descricao + `</p>
-                        <a key="`+ val.id + `" href="#">Adicionar ao Carrinho!<a/>
-                </div>
-                `;
-        });
-};
-
-inicializarLoja();
-
-atualizarCarrinho = () => {
-        var containerCarrinho = document.getElementById("carrinho");
-        containerCarrinho.innerHTML = "";
-        items.map((val) => {
-                if (val.quantidade > 0) {
-                        containerCarrinho.innerHTML += `
-                <p>`+ val.nome + ` | quantidade: ` + val.quantidade + `</p>
-                <hr>
-                `;
-                }
-        });
-
-};
-
-var links = document.getElementsByTagName("a");
-
-for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener("click", function () {
-                let key = this.getAttribute("key");
-                items[key].quantidade++;
-                atualizarCarrinho();
-                return false;
-        });
-
+function adicionarAoCarrinho(item, preco) {
+        const index = carrinho.findIndex(i => i.item === item);
+        if (index !== -1) {
+                carrinho[index].quantidade++;
+                carrinho[index].total = carrinho[index].quantidade * preco;
+        } else {
+                carrinho.push({
+                        item: item,
+                        preco: preco,
+                        quantidade: 1,
+                        total: preco
+                });
+        }
+        atualizarCarrinho();
 }
+
+function removerDoCarrinho(index) {
+        carrinho.splice(index, 1);
+        atualizarCarrinho();
+}
+
+function atualizarCarrinho() {
+        const tbody = document.querySelector('.carrinho tbody');
+        let html = '';
+        let total = 0;
+        carrinho.forEach((item, index) => {
+                html += `
+            <tr>
+                <td>${item.item}</td>
+                <td>R$ ${item.preco.toFixed(2)}</td>
+                <td>
+                    <button onclick="decrementarQuantidade(${index})">-</button>
+                    ${item.quantidade}
+                    <button onclick="incrementarQuantidade(${index})">+</button>
+                </td>
+                <td>R$ ${item.total.toFixed(2)}</td>
+                <td><button onclick="removerDoCarrinho(${index})">Remover</button></td>
+            </tr>
+        `;
+                total += item.total;
+        });
+        tbody.innerHTML = html;
+        document.querySelector('.carrinho .total').textContent = `Total: R$ ${total.toFixed(2)}`;
+}
+
+function decrementarQuantidade(index) {
+        carrinho[index].quantidade--;
+        carrinho[index].total = carrinho[index].quantidade * carrinho[index].preco;
+        if (carrinho[index].quantidade === 0) {
+                carrinho.splice(index, 1);
+        }
+        atualizarCarrinho();
+}
+
+
+function incrementarQuantidade(index) {
+        carrinho[index].quantidade++;
+        carrinho[index].total = carrinho[index].quantidade * carrinho[index].preco;
+        if (carrinho[index].quantidade === 0) {
+                carrinho.splice(index, 1);
+        }
+        atualizarCarrinho();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+        atualizarCarrinho();
+});
